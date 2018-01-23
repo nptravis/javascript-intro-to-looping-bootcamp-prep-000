@@ -1,3 +1,11 @@
+function doWhile(array) {
+   do {
+     array.pop();
+   } while (array.length > 0 && maybeTrue());
+return array;
+}
+
+
 function forLoop(array) {
   for (let i=0; i<25; i++) {
     if(i === 1){
@@ -21,9 +29,3 @@ function maybeTrue() {
   return Math.random() >= 0.5;
 }
 
-function doWhile(array) {
-   do {
-     array.pop();
-   } while (array.length > 0 && maybeTrue());
-return array;
-}
