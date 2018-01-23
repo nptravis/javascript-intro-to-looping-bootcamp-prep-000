@@ -28,3 +28,9 @@ function maybeTrue() {
   return Math.random() >= 0.5;
 }
 
+function doWhile(array) {
+   do {
+     array.pop();
+   } while (array.length > 0 && maybeTrue());
+return array;
+}
